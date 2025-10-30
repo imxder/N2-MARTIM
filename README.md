@@ -30,8 +30,7 @@ O projeto é composto por três partes principais:
 ## Tecnologias Utilizadas
 
 - **Python 3.10+**
-- **FastAPI** – Criação do backend e endpoints REST  
-- **Uvicorn** – Servidor ASGI para rodar o FastAPI  
+- **FastAPI** – Criação do backend e endpoints REST    
 - **HTML5 / CSS3 / JavaScript (Vanilla)** – Interface do usuário  
 - **Selenium** – Automação e scraping de dados do LinkedIn  
 - **Pandas** – Manipulação de dados (CSV)  
