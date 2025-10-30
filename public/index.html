@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliador de Perfis</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliador de Perfis (Arquitetura API)</h1>
+        <div id="status-bar" class="status-bar" aria-live="polite"></div>
+
+        <div class="main-layout">
+            <div class="column">
+                <h2>1. Cadastrar Vaga</h2>
+                <form id="vaga-form">
+                    <div>
+                        <label for="titulo">Título da Vaga</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </div>
+                    <div>
+                        <label for="grau_escolaridade">Grau de Escolaridade</label>
+                        <input type="text" id="grau_escolaridade" name="grau_escolaridade">
+                    </div>
+                    <div>
+                        <label for="tempo_experiencia">Tempo de Experiência</label>
+                        <input type="text" id="tempo_experiencia" name="tempo_experiencia">
+                    </div>
+                    <div>
+                        <label for="conhecimentos_obrigatorios">Conhecimentos Obrigatórios (um por linha)</label>
+                        <textarea id="conhecimentos_obrigatorios" name="conhecimentos_obrigatorios" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="conhecimentos_desejados">Conhecimentos Desejados (um por linha)</label>
+                        <textarea id="conhecimentos_desejados" name="conhecimentos_desejados" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+                    </div>
+                    <button type="submit">Salvar Vaga</button>
+                </form>
+            </div>
+
+            <div class="column">
+                <h2>2. Analisar e Ver Ranking</h2>
+                <button id="btn-iniciar-analise">Iniciar Análise dos Candidatos</button>
+                <button id="btn-atualizar-resultados" title="Atualizar ranking">Atualizar Resultados</button>
+                
+                <div id="resultados-container">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+selenium
+google-generativeai
+pandas
+python-dotenv
+fastapi
+uvicorn[standard]
