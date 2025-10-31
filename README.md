@@ -1,6 +1,6 @@
 # Avaliador de Perfis LinkedIn 
 
-Aplicação de **análise de perfis do LinkedIn com arquitetura desacoplada**, composta por backend em **FastAPI** e frontend em **JavaScript puro**.  
+Aplicação de **análise de perfis do LinkedIn com arquitetura desacoplada**, composta por backend em **FastAPI** e frontend em **JavaScript**.  
 A ferramenta utiliza **Inteligência Artificial (Google Gemini)** para avaliar candidatos com base em dados coletados via **scraping (Selenium)**.
 
 A coleta dos perfis é feita separadamente por um script Python (`busca_candidatos.py`), que gera o arquivo `.csv` usado na análise principal.
